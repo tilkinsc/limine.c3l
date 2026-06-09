@@ -57,7 +57,7 @@ attrdef @LimineStart = @section(".limine_requests_start"), @nostrip, @align(8);
 attrdef @LimineEnd = @section(".limine_requests_end"), @nostrip, @align(8);
 attrdef @LimineRequest = @section(".limine_requests"), @nostrip, @align(8);
 
-ulong[4] start_marker @LimineMarker = limine_requests_start_marker();
+ulong[4] start_marker @LimineStart = limine_requests_start_marker();
 
 ulong[4] base_revision @LimineRequest = limine_base_revision(4);
 
