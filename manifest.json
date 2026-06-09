@@ -1,0 +1,5 @@
+{
+    "provides": "limine",
+    "sources": ["src/**"],
+    "targets": {"elf-x64": {}}
+}
