@@ -1,5 +1,17 @@
 {
     "provides": "limine",
     "sources": ["src/**"],
-    "targets": {"elf-x64": {}}
+    "targets": {
+        "elf-aarch64": {},
+        "elf-riscv32": {},
+        "elf-riscv64": {},
+        "elf-x86": {},
+        "elf-x64": {},
+        "mingw-x64": {},
+        "linux-aarch64": {},
+        "linux-riscv32": {},
+        "linux-riscv64": {},
+        "linux-x64": {},
+        "linux-x86": {}
+    }
 }
