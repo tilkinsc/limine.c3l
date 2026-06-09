@@ -53,9 +53,9 @@ Example:
 ```c3
 module limine;
 
-attrdef @LimineStart = @section(".limine_requests_start") @nostrip @align(8);
-attrdef @LimineEnd = @section(".limine_requests_end") @nostrip @align(8);
-attrdef @LimineRequest = @section(".limine_requests") @nostrip @align(8);
+attrdef @LimineStart = @section(".limine_requests_start"), @nostrip, @align(8);
+attrdef @LimineEnd = @section(".limine_requests_end"), @nostrip, @align(8);
+attrdef @LimineRequest = @section(".limine_requests"), @nostrip, @align(8);
 
 ulong[4] start_marker @LimineMarker = limine::limine_requests_start_marker();
 
