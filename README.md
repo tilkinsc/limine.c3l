@@ -57,9 +57,9 @@ attrdef @LimineStart = @section(".limine_requests_start"), @nostrip, @align(8);
 attrdef @LimineEnd = @section(".limine_requests_end"), @nostrip, @align(8);
 attrdef @LimineRequest = @section(".limine_requests"), @nostrip, @align(8);
 
-ulong[4] start_marker @LimineMarker = limine::limine_requests_start_marker();
+ulong[4] start_marker @LimineMarker = limine_requests_start_marker();
 
-ulong[4] base_revision @LimineRequest = limine::limine_base_revision(4);
+ulong[4] base_revision @LimineRequest = limine_base_revision(4);
 
 BootloaderInfoRequest bootloader_info_request @LimineRequest = {
     .id = limine_bootloader_info_request_id(),
@@ -69,7 +69,7 @@ BootloaderInfoRequest bootloader_info_request @LimineRequest = {
 
 // ... more requests here ... //
 
-ulong[4] end_marker @LimineEnd = limine::limine_requests_end_marker();
+ulong[4] end_marker @LimineEnd = limine_requests_end_marker();
 ```
 
 ```linker
